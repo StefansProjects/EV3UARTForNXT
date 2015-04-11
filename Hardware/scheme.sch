@@ -6329,6 +6329,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="0204/7" value="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -6349,6 +6350,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="GND2" gate="1" x="27.94" y="12.7"/>
 <instance part="GND3" gate="1" x="-15.24" y="50.8"/>
 <instance part="GND4" gate="1" x="60.96" y="60.96"/>
+<instance part="R4" gate="G$1" x="-33.02" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -6455,24 +6457,30 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </net>
 <net name="A" class="0">
 <segment>
-<pinref part="RS485" gate="G$1" pin="6"/>
-<wire x1="-33.02" y1="48.26" x2="-43.18" y2="48.26" width="0.1524" layer="91"/>
-<label x="-35.56" y="48.26" size="1.778" layer="95" rot="MR0"/>
-<wire x1="-33.02" y1="48.26" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="A"/>
 <label x="-5.08" y="27.94" size="1.778" layer="95" rot="MR0"/>
-<wire x1="-33.02" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="RS485" gate="G$1" pin="6"/>
+<wire x1="-43.18" y1="48.26" x2="-38.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="48.26" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
+<label x="-40.64" y="48.26" size="1.778" layer="95" rot="MR0"/>
+<wire x1="-38.1" y1="27.94" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-38.1" y="35.56"/>
 </segment>
 </net>
 <net name="B" class="0">
 <segment>
 <pinref part="RS485" gate="G$1" pin="5"/>
 <wire x1="-43.18" y1="50.8" x2="-27.94" y2="50.8" width="0.1524" layer="91"/>
-<label x="-35.56" y="50.8" size="1.778" layer="95" rot="MR0"/>
-<wire x1="-27.94" y1="50.8" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
+<label x="-40.64" y="50.8" size="1.778" layer="95" rot="MR0"/>
+<wire x1="-27.94" y1="50.8" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="B"/>
+<wire x1="-27.94" y1="35.56" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="25.4" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="-5.08" y="25.4" size="1.778" layer="95" rot="MR0"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<junction x="-27.94" y="35.56"/>
 </segment>
 </net>
 <net name="DIR" class="0">
