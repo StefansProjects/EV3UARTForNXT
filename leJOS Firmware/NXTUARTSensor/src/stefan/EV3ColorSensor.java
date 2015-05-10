@@ -25,7 +25,7 @@ public class EV3ColorSensor extends UARTSensorBase {
 
 	private int parseColor(byte[] data, int offset, int maxlen)
 	{
-		//TODO check command byte and checksum
+		//TODO check command byte and checksum and not only print result to LCD
 		switch(data[1])
 		{
 		case 0:

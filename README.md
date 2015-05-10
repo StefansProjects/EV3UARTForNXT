@@ -1,6 +1,11 @@
 # EV3UARTForNXT
-A very simple bridge to use Lego Mindstorms EV3 Sensor with Lego Mindstorms NXT
+Supplementary files for the article  "Connecting Lego Mindstorms EV3 UART sensors to the LEGO Mindstorms NXT Brick - 
+A small and simple RS485-UART bridge for Lego Mindstorms NXT"
 
-A very simple RS485-to-UART bridge for the Lego Mindstorms NXT, including a prototype driver to use the EV3 Color sensor with leJOS on the NXT.
+http://stefanshacks.blogspot.de/2015/04/connecting-lego-mindstorms-ev3-uart.html
 
-The attached scheme.sch (Hardware/) can be opened with Cadsoft Eagle 7.2
+
+
+
+There is a pdf and a Cadsoft Eagle 7.2 version of the scheme (Hardware/)
+
